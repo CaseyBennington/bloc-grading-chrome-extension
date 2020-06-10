@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thinkful / Bloc extension options</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            width: 500px;
+            padding: 0 15px 15px 15px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        button {
+            box-sizing: border-box;
+            color: rgba(0, 0, 0, .87);
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12);
+            background-color: #e0e0e0;
+            padding: 6px 16px;
+            margin: 6px;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+
+        input {
+            padding: 8px;
+            border-radius: 4px;
+            font-size: 16px;
+            margin-right: 10px;
+            box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .12);
+        }
+
+        label {
+            display: none;
+        }
+
+        .full-width {
+            width: 100%;
+        }
+
+        .active {
+            color: #fff;
+            background-color: #3f51b5;
+        }
+
+    </style>
+</head>
+<body>
+<h1>Choose your Grading information.</h1>
+<h3>Your name</h3>
+<label for="grader-name">Your name</label>
+<div>
+    <input type="text" name="grader-name" id="grader-name" placeholder="Grader name">
+</div>
+
+<h2>Current program you're grading</h2>
+<div id="grading-program-wrapper">
+    <button type="button" id="web-development-track" class="grading-program">
+        Web Development Track
+    </button>
+    <button type="button" id="engineering-flex" class="grading-program">
+        Engineering Flex
+    </button>
+    <button type="button" id="design-track" class="grading-program">
+        Design Track
+    </button>
+    <button type="button" id="product-design-flex" class="grading-program">
+        Product Design Flex
+    </button>
+    <button type="button" id="data-analytics" class="grading-program">
+        Data Analytics
+    </button>
+    <button type="button" id="data-science" class="grading-program">
+        Data Science
+    </button>
+    <button type="button" id="software-development-track" class="grading-program">
+        Software Development Track
+    </button>
+    <button type="button" id="ei-nw" class="grading-program">
+        Engineering Immersion / Nights & Weekends
+    </button>
+</div>
+
+<h2>Customize your intro message</h2>
+<label for="intro-message">Name</label>
+<p>To use student name type ${studentName}</p>
+<p><strong>Default is:</strong> Hello ${studentName}! Your Name from the grading team here.</p>
+<div>
+    <input type="text" name="intro-message" id="intro-message" class="full-width"
+           placeholder="Ahoyyy ${studentName}! Jon Smith here.">
+</div>
+</body>
+<script src="options.js"></script>
+</html>
